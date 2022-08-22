@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="sasta_Calculator.css">
+</head>
+
+<body class="body">
+    <script>
+        function addition() {
+            var a = document.getElementById("num1Addition").value;
+            var b = document.getElementById("num2Addition").value;
+            var c = Number(a) + Number(b);
+            alert(c + " is the Addition of the two numbers");
+        }
+        function subtraction() {
+            var a = document.getElementById("num1Subtraction").value;
+            var b = document.getElementById("num2Subtraction").value;
+            var c = Number(a) - Number(b);
+            alert(c + " is the Subtraction of the two numbers");
+        }
+        function multiplication() {
+            var a = document.getElementById("num1Multiplication").value;
+            var b = document.getElementById("num2Multiplication").value;
+            var c = Number(a) * Number(b);
+            alert(c + " is the Multiplication of the two numbers");
+        }
+        function division() {
+            var a = document.getElementById("num1Division").value;
+            var b = document.getElementById("num2Division").value;
+            var c = Number(a) / Number(b);
+            alert(c + " is the Division of the two numbers");
+        }
+        function modulus() {
+            var a = document.getElementById("num1Modulus").value;
+            var b = document.getElementById("num2Modulus").value;
+            var c = Number(a) % Number(b);
+            alert(c + " is the Mod of the two numbers");
+        }
+    </script>
+    <div class="maindiv">
+        <div class="divtwo">
+            <form>
+
+                <input type="number" placeholder="A" id="num1Addition"> + <input type="number" placeholder="B" id="num2Addition">
+                <button onclick="addition()">Add</button>
+
+                <br><br>
+
+                <input type="number" placeholder="A" id="num1Subtraction"> - <input type="number" placeholder="B" id="num2Subtraction">
+                <button onclick="subtraction()">Subtract</button>
+
+                <br><br>
+
+                <input type="number" placeholder="A" id="num1Multiplication"> x <input type="number" placeholder="B" id="num2Multiplication">
+                <button onclick="multiplication()">Multiply</button>
+
+                <br><br>
+
+                <input type="number" placeholder="A" id="num1Division"> &divide; <input type="number" placeholder="B" id="num2Division">
+                <button onclick="division()">Divide</button>
+
+                <br><br>
+
+                <input type="number" placeholder="A" id="num1Modulus"> % <input type="number" placeholder="B" id="num2Modulus">
+                <button onclick="modulus()">Modulus</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
